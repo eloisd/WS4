@@ -1,42 +1,4 @@
-# from datetime import datetime
 
-# from fastapi import FastAPI
-# from fastapi.encoders import jsonable_encoder
-# from pydantic import BaseModel
-
-# fake_db = {}
-
-# class Item(BaseModel):
-#     ID: int
-#     Title: str
-#     State: int 
-#     DueDate: str
-#     description: str
-
-
-# app = FastAPI()
-
-# @app.post("/items/")
-# async def create_item(item: Item):
-#     return TODOLIST
-
-# @app.get("/todo/{id}")
-# async def read_item(id: int):
-#     return {"id": id}
-
-# @app.post("/todo/")
-# async def create_item(item: Item):
-#     return item
-
-# @app.delete("/item/{item_id}")
-# async def delete_hero(hero_id: int):
-#     with Session(engine) as session:
-#         hero = session.get(Hero, hero_id)
-#         if not hero:
-#             raise HTTPException(status_code=404, detail="Hero not found")
-#         session.delete(hero)
-#         session.commit()
-#         return {"ok": True}
 
 from fastapi import FastAPI
 from pydantic import BaseModel
